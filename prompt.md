@@ -107,7 +107,7 @@ A hierarquia deve ser imediatamente compreensível visualmente.
 
 Criar uma grande caixa externa identificando:
 
-**AWS Region: us-west-2**
+**AWS Region: us-east-2**
 
 Dentro dela, inserir apenas os recursos que efetivamente pertencem à região.
 
@@ -137,11 +137,11 @@ Não colocar dentro da VPC serviços AWS que normalmente são serviços regionai
 
 Se a arquitetura utilizar alta disponibilidade, representar claramente:
 
-**us-west-2a**
+**us-east-2a**
 
 e
 
-**us-west-2b**
+**us-east-2b**
 
 lado a lado.
 
