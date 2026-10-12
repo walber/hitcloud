@@ -1,0 +1,234 @@
+{
+  "pbtResults": {
+    "2.2 Write property test — Property 1: CORS headers always present": {
+      "status": "passed",
+      "lastRunTimestamp": 1791418807823
+    },
+    "2.3 Write property test — Property 2: Successful increment returns the DynamoDB count": {
+      "status": "passed",
+      "lastRunTimestamp": 1791418809925
+    },
+    "2.4 Write property test — Property 3: Counter Item key is always \"hits\"": {
+      "status": "passed",
+      "lastRunTimestamp": 1791418811952
+    },
+    "2.5 Write property test — Property 4: DynamoDB errors always produce HTTP 500": {
+      "status": "passed",
+      "lastRunTimestamp": 1791418813846
+    },
+    "2.6 Write property test — Property 5: Every invocation produces a structured log entry": {
+      "status": "passed",
+      "lastRunTimestamp": 1791418815659
+    }
+  },
+  "executionHistory": {
+    "1. Scaffold CDK project structure": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418136469
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418142895
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418252442
+      }
+    ],
+    "2.1 Write `lambda/handler.py`": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418137872
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418256558
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418331143
+      }
+    ],
+    "3. Checkpoint — Handler tests pass": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418138049
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418393846
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418827062
+      }
+    ],
+    "4.1 Declare the Counter Table": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418138140
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418258464
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418333005
+      }
+    ],
+    "4.2 Declare the Hit Handler Lambda function": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418138253
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418336978
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418384019
+      }
+    ],
+    "4.3 Apply least-privilege IAM grants": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418138416
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418833267
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418929889
+      }
+    ],
+    "4.4 Declare the HTTP API and wire the route": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418138532
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418835430
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418931954
+      }
+    ],
+    "4.5 Seed the Counter Item with an `AwsCustomResource`": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418138636
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418935988
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418979325
+      }
+    ],
+    "5. Checkpoint — CDK stack synthesises cleanly": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418138751
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791419282376
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791419569494
+      }
+    ],
+    "6.1 Write `README.md`": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418138870
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791419571782
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791419603761
+      }
+    ],
+    "7. Final checkpoint — Full stack wired and all tests pass": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418139026
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791419606346
+      },
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791419796531
+      }
+    ],
+    "2. Implement the Hit Handler Lambda": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418331201
+      }
+    ],
+    "4. Implement `HitCloudStack` in CDK": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791418979426
+      }
+    ],
+    "6. Add browser integration snippet to README": [
+      {
+        "executionId": "db6c390a-ff19-48f3-8cd2-926c1f347a05",
+        "chatSessionId": "sess_36e7580a-3759-439f-8d3e-0b6ea8ebe9ae",
+        "timestamp": 1791419603973
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+node_modules
+frontend/dist/
+frontend/node_modules/
+cdk.out/
+**/__pycache__/
+.venv/
+.pytest_cache/
+.hypothesis/
+frontend/coverage/
+frontend/public/config.json
+cdk-outputs.json
+cert-outputs.json
+.env
+.env.*

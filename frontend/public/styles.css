@@ -1,0 +1,332 @@
+/* =============================================================
+   HitCloud — styles.css
+   Responsive "Em breve" page stylesheet
+   Supports: mobile 375 px, desktop 1280 px
+   Accessibility: prefers-reduced-motion, focus-visible
+   ============================================================= */
+
+/* -----------------------------------------------------------
+   1. CSS Custom Properties
+   ----------------------------------------------------------- */
+:root {
+  /* Colour palette */
+  --color-bg:          #0f1117;
+  --color-surface:     #1a1d27;
+  --color-surface-alt: #22263a;
+  --color-border:      #2e3352;
+  --color-primary:     #5c9eff;
+  --color-primary-dim: #3a7bd5;
+  --color-text:        #e8ecf4;
+  --color-text-muted:  #8a92aa;
+  --color-error-bg:    #2d1a1a;
+  --color-error-border:#c0392b;
+  --color-error-text:  #ff7b7b;
+  --color-success:     #4caf7d;
+
+  /* Typography */
+  --font-family-base: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-size-base:   1rem;       /* 16 px */
+  --font-size-sm:     0.875rem;   /* 14 px */
+  --font-size-lg:     1.25rem;    /* 20 px */
+  --font-size-xl:     1.75rem;    /* 28 px */
+  --font-size-counter:3.5rem;     /* 56 px */
+  --line-height-base: 1.6;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold:   700;
+
+  /* Spacing scale (multiples of 4 px) */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Borders & radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --border-width: 1px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-btn:  0 2px 8px  rgba(92, 158, 255, 0.25);
+
+  /* Transitions */
+  --transition-fast:   0.15s ease;
+  --transition-normal: 0.3s ease;
+}
+
+/* -----------------------------------------------------------
+   2. Reset & Box Model
+   ----------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------------------------------
+   3. Base / Document
+   ----------------------------------------------------------- */
+html {
+  font-size: 100%; /* respect user browser preference */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -----------------------------------------------------------
+   4. Layout — Main Content
+   ----------------------------------------------------------- */
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 640px;
+  padding: var(--space-10) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+/* -----------------------------------------------------------
+   5. Typography
+   ----------------------------------------------------------- */
+h1 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.intro {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  text-align: center;
+  max-width: 46ch;
+}
+
+/* -----------------------------------------------------------
+   6. Counter Card
+   ----------------------------------------------------------- */
+.counter-card {
+  width: 100%;
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-10) var(--space-8);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* Counter label */
+#counter-label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Counter value */
+#counter-display {
+  font-size: var(--font-size-counter);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  transition: opacity var(--transition-normal);
+}
+
+/* -----------------------------------------------------------
+   7. Loading State
+   ----------------------------------------------------------- */
+/* When the counter is showing "Carregando..." text
+   the opacity is reduced slightly to hint loading.
+   This is controlled by main.ts setting the text content.     */
+body[data-loading="true"] #counter-display,
+#counter-display:empty {
+  opacity: 0.4;
+}
+
+/* -----------------------------------------------------------
+   8. Button
+   ----------------------------------------------------------- */
+#refresh-btn {
+  margin-top: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-family: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  background: var(--color-surface-alt);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: var(--shadow-btn);
+  transition:
+    background-color var(--transition-fast),
+    border-color     var(--transition-fast),
+    opacity          var(--transition-fast);
+}
+
+#refresh-btn:hover:not(:disabled) {
+  background: var(--color-primary-dim);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+#refresh-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+#refresh-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* -----------------------------------------------------------
+   9. Status / Error Message
+   ----------------------------------------------------------- */
+#status-message {
+  width: 100%;
+  max-width: 640px;
+  padding: 0;        /* hidden by default — no space when empty */
+  font-size: var(--font-size-sm);
+  text-align: center;
+  color: transparent;   /* invisible when empty */
+  transition: color var(--transition-normal);
+}
+
+/* Show error styling when the element has text content.
+   We target the non-empty state via :not(:empty).            */
+#status-message:not(:empty) {
+  padding: var(--space-4) var(--space-6);
+  color: var(--color-error-text);
+  background: var(--color-error-bg);
+  border: var(--border-width) solid var(--color-error-border);
+  border-radius: var(--radius-md);
+}
+
+/* -----------------------------------------------------------
+   10. Focus Indicators (accessibility)
+   ----------------------------------------------------------- */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Remove default outline in favour of :focus-visible */
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* -----------------------------------------------------------
+   11. Footer
+   ----------------------------------------------------------- */
+footer {
+  width: 100%;
+  padding: var(--space-6) var(--space-6);
+  border-top: var(--border-width) solid var(--color-border);
+  text-align: center;
+}
+
+footer p {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* -----------------------------------------------------------
+   12. Responsive — Mobile (375 px base, already default)
+       and Desktop (≥ 768 px)
+   ----------------------------------------------------------- */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #counter-display {
+    font-size: 4.5rem;
+  }
+
+  main {
+    padding: var(--space-16) var(--space-8);
+    gap: var(--space-10);
+  }
+
+  .counter-card {
+    padding: var(--space-12) var(--space-10);
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    max-width: 720px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #counter-display {
+    font-size: 5rem;
+  }
+}
+
+/* -----------------------------------------------------------
+   13. Reduced-Motion — disable all transitions / animations
+   ----------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration:        0.01ms !important;
+    animation-iteration-count: 1      !important;
+    transition-duration:       0.01ms !important;
+    scroll-behavior:           auto   !important;
+  }
+
+  /* Explicit override for #counter-display per spec */
+  #counter-display {
+    transition: none;
+  }
+
+  #refresh-btn {
+    transition: none;
+  }
+
+  #status-message {
+    transition: none;
+  }
+}

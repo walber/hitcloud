@@ -1,0 +1,611 @@
+{
+  "pbtResults": {
+    "3.3 Write Hypothesis property tests for the Hit Handler": {
+      "status": "passed",
+      "lastRunTimestamp": 1791481520432
+    }
+  },
+  "executionHistory": {
+    "1.1 Read existing files and plan migration": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480552335
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480560518
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480935051
+      }
+    ],
+    "1.2 Add configuration support to `cdk.json`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553240
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480562770
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480937451
+      }
+    ],
+    "2.1 Implement DynamoDB table construct in `AppStack`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553381
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480940089
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791481099245
+      }
+    ],
+    "2.2 Write infrastructure unit tests for DynamoDB table": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553507
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791481103860
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488774096
+      }
+    ],
+    "3.1 Rewrite `lambda/handler.py`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553581
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480942311
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791481101617
+      }
+    ],
+    "3.2 Write pytest unit tests for the Hit Handler": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553649
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791481105933
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488776643
+      }
+    ],
+    "3.3 Write Hypothesis property tests for the Hit Handler": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553713
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791481108111
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488777035
+      }
+    ],
+    "4. Checkpoint — Backend unit tests pass": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553774
+      }
+    ],
+    "5.1 Add Lambda construct and CloudWatch log group to `AppStack`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553875
+      },
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791481110270
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488779695
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488785199
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488791065
+      }
+    ],
+    "5.2 Grant least-privilege IAM permissions to Lambda": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553942
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488796708
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489254187
+      }
+    ],
+    "5.3 Write infrastructure assertions for Lambda IAM role": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480553999
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489257205
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489347844
+      }
+    ],
+    "6.1 Add `RestApi` construct to `AppStack`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554055
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489259771
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489348237
+      }
+    ],
+    "6.2 Configure API Gateway gateway responses with CORS headers": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554109
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489352133
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489869811
+      }
+    ],
+    "6.3 Restrict Lambda invocation to API Gateway ARN": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554168
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489354675
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489870189
+      }
+    ],
+    "7.1 Add `CfnWebACL` construct to `AppStack`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554240
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489355152
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489870865
+      }
+    ],
+    "7.2 Associate WAF Web ACL with API Gateway stage": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554310
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489873907
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791490756595
+      }
+    ],
+    "7.3 Write infrastructure assertion for WAF association": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554380
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791490760187
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791493468176
+      }
+    ],
+    "8.1 Add private S3 bucket to `AppStack`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554447
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489876492
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791490756856
+      }
+    ],
+    "8.2 Configure CloudFront OAC and distribution": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554512
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791490762927
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791493468624
+      }
+    ],
+    "8.3 Write infrastructure assertions for S3 and CloudFront OAC": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554577
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791493472190
+      }
+    ],
+    "9.1 Create `hitcloud/cert_stack.py` with `CertStack`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554637
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791493475291
+      }
+    ],
+    "9.2 Wire CertStack conditionally in `app.py`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554693
+      }
+    ],
+    "10.1 Add four CloudWatch alarms to `AppStack`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554768
+      }
+    ],
+    "11.1 Add CloudFormation outputs to `AppStack`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554826
+      }
+    ],
+    "11.2 Write infrastructure assertions for stack outputs and tags": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554882
+      }
+    ],
+    "12. Checkpoint — CDK synth and infrastructure tests pass": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480554944
+      }
+    ],
+    "13.1 Create frontend directory structure and configuration files": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555005
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488799027
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489254555
+      }
+    ],
+    "13.2 Write `frontend/public/index.html`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555129
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489262152
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489348726
+      }
+    ],
+    "13.3 Write `frontend/public/styles.css`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555185
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489264464
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489349072
+      }
+    ],
+    "14.1 Write `frontend/src/types.ts`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555246
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489355564
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489871161
+      }
+    ],
+    "14.2 Write `frontend/src/api.ts`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555324
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489876914
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791490757385
+      }
+    ],
+    "14.3 Write `frontend/src/main.ts`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555391
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791490763380
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791493469040
+      }
+    ],
+    "15.1 Add `config.json` generation and S3 sync to deploy script / `app.py`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555450
+      },
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791493475765
+      }
+    ],
+    "16.1 Write `frontend/tests/setup.ts` for jsdom test environment": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555516
+      }
+    ],
+    "16.2 Write Vitest unit tests for frontend behaviour": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555579
+      }
+    ],
+    "16.3 Write Vitest property tests for frontend": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555646
+      }
+    ],
+    "17. Checkpoint — Frontend tests pass": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555709
+      }
+    ],
+    "18.1 Write opt-in integration test in `tests/test_integration.py`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555763
+      }
+    ],
+    "19.1 Rewrite `README.md`": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555815
+      }
+    ],
+    "20. Final checkpoint — All tests pass": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480555874
+      }
+    ],
+    "1. Repository inspection and CDK project restructure": [
+      {
+        "executionId": "18666785-ee1a-46bf-b4c9-b19165f636ef",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791480937518
+      }
+    ],
+    "2. DynamoDB Counter Table": [
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488774248
+      }
+    ],
+    "3. Lambda Hit Handler rewrite": [
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791488777137
+      }
+    ],
+    "5. Lambda construct and IAM wiring in `AppStack`": [
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489347975
+      }
+    ],
+    "13. Frontend scaffolding": [
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489349157
+      }
+    ],
+    "6. API Gateway REST API v1": [
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791489870298
+      }
+    ],
+    "7. WAFv2 Web ACL": [
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791493468397
+      }
+    ],
+    "14. Frontend TypeScript implementation": [
+      {
+        "executionId": "60f61fdf-ecf4-409c-abce-4a404f02a220",
+        "chatSessionId": "sess_016bf853-5276-4cb4-8cac-a431c3ed86bd",
+        "timestamp": 1791493469164
+      }
+    ]
+  }
+}

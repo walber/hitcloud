@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Acompanhe o interesse da comunidade." />
+    <title>Em breve</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Em breve</h1>
+
+      <p class="intro">
+        Algo novo está chegando. Fique de olho e volte em breve para conferir as novidades.
+      </p>
+
+      <section
+        class="counter-card"
+        aria-labelledby="counter-label"
+      >
+        <span id="counter-label">Total de acessos</span>
+
+        <span
+          id="counter-display"
+          aria-live="polite"
+          aria-atomic="true"
+        >–</span>
+
+        <button id="refresh-btn" type="button">
+          Atualizar contagem
+        </button>
+      </section>
+
+      <div
+        id="status-message"
+        role="status"
+        aria-live="assertive"
+        aria-atomic="true"
+      ></div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="footer-year"></span> HitCloud. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
