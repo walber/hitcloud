@@ -1,15 +1,24 @@
-## 0. Get Account identity
+# Scripts
+
+## 0. Get Account identity (mandatory)
+```powershell
 $hitcloudAccount = aws sts get-caller-identity --profile hitcloud --query Account --output text
+```
 
 ## 1. Bootstrap the project
+```powershell
 npx cdk bootstrap "aws://$hitcloudAccount/us-east-2" --profile hitcloud --app "python.exe app.py"
+```
 
 ## 2. Publish frontend and deploy stack
+```powershell
 npm --prefix frontend ci --include=dev
 npm --prefix frontend run build
 npx cdk deploy
+```
 
 ## 4. Publish the web page
+```powershell
 $env:AWS_PROFILE = "hitcloud"
 $env:AWS_DEFAULT_REGION = "us-east-2"
 $env:AWS_REGION = "us-east-2"
@@ -38,8 +47,10 @@ $outputMap = @{}
 
 # Upload the frontend and refresh CloudFront's cache
 python.exe scripts/publish_frontend.py --outputs cdk-outputs.json
+```
 
 ## Get CloudFront URL
+```powershell
 aws cloudformation describe-stacks `
   --stack-name AppStack `
   --region us-east-2 `
@@ -47,8 +58,10 @@ aws cloudformation describe-stacks `
   --query "Stacks[0].Outputs[?OutputKey=='WebsiteUrl'].OutputValue | [0]" `
   --output text `
   --no-cli-pager
+```
 
 ## Fix content type to "text/javascript"
+```powershell
 $hitcloudOutputs = (Get-Content cdk-outputs.json -Raw | ConvertFrom-Json).AppStack
 
 # Re-upload JavaScript with the correct content type
@@ -64,16 +77,19 @@ aws s3 cp frontend/dist/assets/ "s3://$($hitcloudOutputs.BucketName)/assets/" `
 if ($LASTEXITCODE -ne 0) {
   throw "JavaScript upload failed."
 }
+```
 
 ## Clear CloudFront's cached asset responses
+```powershell
 aws cloudfront create-invalidation `
   --distribution-id $hitcloudOutputs.DistributionId `
   --paths "/assets/*" `
   --profile hitcloud `
   --no-cli-pager
-
+```
 
 ## Reset counter
+```powershell
 $hitcloudOutputs = (Get-Content cdk-outputs.json -Raw | ConvertFrom-Json).AppStack
 
 aws dynamodb update-item `
@@ -86,8 +102,10 @@ aws dynamodb update-item `
   --region us-east-2 `
   --profile hitcloud `
   --no-cli-pager
+```
 
 ## Destroy Stack
+```powershell
 npx cdk destroy AppStack `                                                                       
 --profile hitcloud `     
 --app "python.exe app.py"
@@ -101,3 +119,4 @@ aws cloudformation wait stack-delete-complete `
 --stack-name CDKToolkit `
 --region us-east-2 `
 --profile hitcloud
+```
