@@ -1,35 +1,15 @@
-$hitcloudAccount = aws sts get-caller-identity --profile hitcloud --query Account --output text   
+## 0. Get Account identity
+$hitcloudAccount = aws sts get-caller-identity --profile hitcloud --query Account --output text
 
+## 1. Bootstrap the project
 npx cdk bootstrap "aws://$hitcloudAccount/us-east-2" --profile hitcloud --app "python.exe app.py"
 
-npx cdk destroy AppStack `                                                                       
---profile hitcloud `     
---app "python.exe app.py"
-
-aws cloudformation delete-stack `                                                                
---stack-name CDKToolkit `
---region us-east-2 `
---profile hitcloud
-
-aws cloudformation wait stack-delete-complete `                                                  
---stack-name CDKToolkit `
---region us-east-2 `     
---profile hitcloud
-
-$env:AWS_DEFAULT_REGION = "us-east-2"
-$env:AWS_REGION = "us-east-2"
-
-npx cdk diff `
-  --profile hitcloud `
-  --app "python.exe app.py"
-
-
+## 2. Publish frontend and deploy stack
 npm --prefix frontend ci --include=dev
-
 npm --prefix frontend run build
-
 npx cdk deploy
 
+## 4. Publish the web page
 $env:AWS_PROFILE = "hitcloud"
 $env:AWS_DEFAULT_REGION = "us-east-2"
 $env:AWS_REGION = "us-east-2"
@@ -59,7 +39,7 @@ $outputMap = @{}
 # Upload the frontend and refresh CloudFront's cache
 python.exe scripts/publish_frontend.py --outputs cdk-outputs.json
 
-// WebsiteUrl
+## Get CloudFront URL
 aws cloudformation describe-stacks `
   --stack-name AppStack `
   --region us-east-2 `
@@ -68,6 +48,7 @@ aws cloudformation describe-stacks `
   --output text `
   --no-cli-pager
 
+## Fix content type to "text/javascript"
 $hitcloudOutputs = (Get-Content cdk-outputs.json -Raw | ConvertFrom-Json).AppStack
 
 # Re-upload JavaScript with the correct content type
@@ -84,14 +65,16 @@ if ($LASTEXITCODE -ne 0) {
   throw "JavaScript upload failed."
 }
 
-# Clear CloudFront's cached asset responses
+## Clear CloudFront's cached asset responses
 aws cloudfront create-invalidation `
   --distribution-id $hitcloudOutputs.DistributionId `
   --paths "/assets/*" `
   --profile hitcloud `
   --no-cli-pager
 
-  $hitcloudOutputs = (Get-Content cdk-outputs.json -Raw | ConvertFrom-Json).AppStack
+
+## Reset counter
+$hitcloudOutputs = (Get-Content cdk-outputs.json -Raw | ConvertFrom-Json).AppStack
 
 aws dynamodb update-item `
   --table-name $hitcloudOutputs.TableName `
@@ -103,3 +86,18 @@ aws dynamodb update-item `
   --region us-east-2 `
   --profile hitcloud `
   --no-cli-pager
+
+## Destroy Stack
+npx cdk destroy AppStack `                                                                       
+--profile hitcloud `     
+--app "python.exe app.py"
+
+aws cloudformation delete-stack `
+--stack-name CDKToolkit `
+--region us-east-2 `
+--profile hitcloud
+
+aws cloudformation wait stack-delete-complete `
+--stack-name CDKToolkit `
+--region us-east-2 `
+--profile hitcloud

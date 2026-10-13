@@ -13,9 +13,28 @@ def publish(outputs_path, dist=Path('frontend/dist')):
     (dist / 'config.json').write_text(json.dumps({'apiUrl': api.rstrip('/')}) + '\n')
     def aws(*args):
         subprocess.run(['aws', *args, '--region', 'us-east-2'], check=True)
+
+    asset_cache = "public,max-age=31536000,immutable"
+    assets_url = f"s3://{bucket}/assets/"
+
     # Keep old hashed assets so clients with cached HTML are not broken during rollout.
     aws('s3', 'sync', str(dist / 'assets'), f's3://{bucket}/assets/',
-        '--cache-control', 'public,max-age=31536000,immutable')
+        '--cache-control', asset_cache)
+    # JavaScript is uploaded separately with an explicit MIME type.
+    aws(
+        "s3", "sync", str(dist / "assets"), assets_url,
+        "--exclude", "*.js",
+        "--cache-control", asset_cache,
+    )
+    # Re-upload JavaScript even when unchanged to correct existing metadata.
+    aws(
+        "s3", "cp", str(dist / "assets"), assets_url,
+        "--recursive",
+        "--exclude", "*",
+        "--include", "*.js",
+        "--content-type", "text/javascript",
+        "--cache-control", asset_cache,
+    )
     aws('s3', 'cp', str(dist / 'config.json'), f's3://{bucket}/config.json',
         '--cache-control', 'no-store', '--content-type', 'application/json')
     aws('s3', 'cp', str(dist / 'index.html'), f's3://{bucket}/index.html',

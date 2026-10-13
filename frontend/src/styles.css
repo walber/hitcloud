@@ -105,6 +105,14 @@ main {
   flex-direction: column;
   align-items: center;
   gap: var(--space-8);
+  position: fixed;
+}
+
+.water-mark {
+  opacity: 0.25;
+	margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
 }
 
 /* -----------------------------------------------------------
@@ -140,12 +148,13 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: var(--space-4);
+  opacity: .85;
 }
 
 /* Counter label */
 #counter-label {
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-bold);
   color: var(--color-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -177,6 +186,7 @@ body[data-loading="true"] #counter-display,
    8. Button
    ----------------------------------------------------------- */
 #refresh-btn {
+  opacity: 1;
   margin-top: var(--space-2);
   padding: var(--space-3) var(--space-6);
   font-family: inherit;
